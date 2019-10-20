@@ -1,0 +1,114 @@
+*,  *:before,  *:after  {
+    -moz-box-sizing:  border-box;
+    -webkit-box-sizing:  border-box;
+    box-sizing:  border-box;
+}
+
+@keyframes animatedBackground  {
+    from  {
+    background-position:  0 0;
+}
+to  {
+    background-position:  100% 0;
+}
+}
+.contenedor_form  {
+    max-width:  300px;
+    margin:  10px auto;
+    padding:  10px 20px;
+    background:  white;
+    border-radius:  8px;
+}
+
+
+.titulo_form  {
+    margin:  0 0 30px 0;
+    text-align:  center;
+}
+.input_form[type="text"],  input[type="password"],  input[type="date"],  input[type="datetime"],  input[type="email"],  input[type="number"],  input[type="search"],  input[type="tel"],  input[type="time"],  input[type="url"],  textarea,  select  {
+    background:  rgba(255, 255, 255, 0.1);
+    border:  none;
+    font-size:  16px;
+    height:  auto;
+    margin:  0;
+    outline:  0;
+    padding:  15px;
+    width:  100%;
+    background-color:  #e8eeef;
+    color:  #8a97a0;
+    box-shadow:  0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom:  5px;
+}
+textarea{
+    resize: none;
+    overflow: auto;
+}
+.input_form[type="radio"],  input[type="checkbox"]  {
+    margin:  0 4px 8px 0;
+}
+select  {
+    padding:  6px;
+    height:  32px;
+    border-radius:  2px;
+}
+.boton_submit  {
+    padding:  19px 39px 18px 39px;
+    color:  white;
+    background-color:  #1f6bdd;
+    font-size:  18px;
+    text-align:  center;
+    font-style:  normal;
+    border-radius:  5px;
+    width:  100%;
+    border:  1px solid #1f6bdd;
+    border-width:  1px 1px 3px;
+    box-shadow:  0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    margin-bottom:  10px;
+}
+.contenedor_fieldset  {
+    margin-bottom:  30px;
+    border:  none;
+}
+.legend  {
+    font-size:  1.4em;
+    margin-bottom:  10px;
+}
+.label  {
+    display:  block;
+    margin-bottom:  8px;
+    margin-top: 10px;
+}
+.label.light  {
+    font-weight:  300;
+    display:  inline;
+}
+.number  {
+    background-color:  #1f6bdd;
+    color:  #fff;
+    height:  30px;
+    width:  30px;
+    display:  inline-block;
+    font-size:  0.8em;
+    margin-right:  4px;
+    line-height:  30px;
+    text-align:  center;
+    text-shadow:  0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius:  100%;
+}
+@media screen and (min-width: 480px)  {
+    .contenedor_form  {
+    max-width:  480px;
+}
+}
+
+.opcion{
+    display: none;
+}
+
+.error{
+    align-self: center;
+    margin-top: 0;
+    font-size: 1.1em;
+    color: rgba(207, 23, 23, 0.877);
+    margin-bottom: 15px;
+}

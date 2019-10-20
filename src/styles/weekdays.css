@@ -1,0 +1,13 @@
+#calendar ul.weekdays {
+	height: 40px;
+	background: #1f6bdd;
+}
+#calendar ul.weekdays li {
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 20px;
+	border: none ;
+	padding: 10px 6px;
+	color: #fff;
+	font-size: 13px;
+}
