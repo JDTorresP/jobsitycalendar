@@ -15,7 +15,6 @@ export default class Calendar extends Component {
       }
 	componentDidMount(){
 		this.getCurrentMonth();
-		this.getFirstLastDayOfMonth();
 	}
 	getCurrentMonth(){
 		let arr=[];
