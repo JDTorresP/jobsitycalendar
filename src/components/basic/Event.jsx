@@ -1,16 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../../styles/event.css';
-export default class Event extends Component {
-    render() {
+export default function Event(props){
         return ( 
         <div className="event">
-            <div className="event-desc">
-                {this.props.description}
-            </div>
-            <div className="event-time">
-                {this.props.time}
+            <div className="wrap_eventData">
+                <div className="evn_btns"><i className='far fa-edit edit_btn'></i>
+                    <i className='fas fa-trash-alt dlt_btn' onClick={()=>{props.deleteEvent(props.elm.name,props.day)}} ></i>
+                </div>
+                <div className="evn_titles">
+                    <div className="event-name">
+                        {props.elm.name}
+                    </div>
+                    <div className="event-time">
+                        {props.elm.date}
+                    </div>
+                </div> 
+                <div className="event-desc">
+                    {props.elm.description}
+                </div>
             </div>
         </div>   
         )
-    }
 }

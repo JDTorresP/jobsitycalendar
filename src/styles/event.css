@@ -1,3 +1,28 @@
+.wrap_eventData{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	justify-items: center;
+	width: 100%;
+}
+.evn_btns{
+	font-size: 1.2em;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.edit_btn{
+	padding-left: 20px;
+	color: rgb(39, 207, 61);
+}
+.dlt_btn{
+	color: rgb(179, 37, 37);
+	padding-left: 10px;
+}
+.evn_titles{
+	background-color: #93dfe9;
+	border-radius: 5px;
+	text-align:center;
+}
 #calendar .event {
 	clear: both;
 	display: block;
@@ -12,9 +37,17 @@
 	color: #009aaf;
 	text-decoration: none;
 }
+.event-time{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
 
-#calendar .event-desc {
-	color: #666;
-	margin: 3px 0 7px 0;
+#calendar .event-name {
+	color: rgb(32, 32, 32);
 	text-decoration: none;	
+	margin-top: 5px;
+}
+.event-desc{
+	color: rgb(94, 94, 94);
+	margin-top: 5px;
 }
