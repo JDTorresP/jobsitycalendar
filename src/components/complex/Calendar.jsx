@@ -83,7 +83,8 @@ export default class Calendar extends Component {
 		let dia =parseInt(day[2], 10);
 		let newData = this.state.data.map((el,i)=>{
 			el.map((elm,j)=>{
-				if(elm.val===dia){
+				if(elm.val===dia &&elm.current){
+					
 				 elm.events.push(data);
 				}
 				return elm;

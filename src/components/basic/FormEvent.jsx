@@ -139,7 +139,7 @@ export default class FormEvent extends Component {
                 name:this.state.name,
                 city:this.state.city,
                 date:this.state.date,
-                description:this.state.description,
+                description:this.state.remind,
                 time:this.state.time,
                 color:this.state.col
             }; 
