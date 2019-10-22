@@ -53,10 +53,11 @@ export default class Calendar extends Component {
 			cn++;
 		}
 		arr[3][3].events.push({
-			name:"test",
-			date:"hoy",
-			description:"aver",
-			city:"acuya"
+			name:"Test",
+			date:"10-10-2019",
+			description:"test reminder",
+			city:"Miami",
+			color:"#fff"
 		})
 
 		this.setState({data:arr});

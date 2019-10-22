@@ -19,6 +19,8 @@ export default class AddButton extends Component {
       onCloseModal(){
         this.setState({ opened: false });
       };
+    
+      
     render() {
         return (
             <div>

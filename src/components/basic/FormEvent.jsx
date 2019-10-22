@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../styles/form.css';
+import { GithubPicker } from 'react-color';
 import axios from 'axios';
 export default class FormEvent extends Component {
     constructor(props) {
@@ -12,6 +13,7 @@ export default class FormEvent extends Component {
             wicon:"",
             wdesc:"",
             time:"",
+            col:"#009aaf",
             
 
             errorName:'',
@@ -26,6 +28,7 @@ export default class FormEvent extends Component {
         this.handleRemind = this.handleRemind.bind(this);
         this.handleName = this.handleName.bind(this);
         this.handleTime = this.handleTime.bind(this);
+        this.handleColor = this.handleColor.bind(this);
       }
       
 
@@ -116,6 +119,12 @@ export default class FormEvent extends Component {
             remind:e.target.value
         })
     };
+    handleColor(color, event){   
+        this.setState({
+            background: color.hex,
+            col:color.hex
+        })
+    }
    
     handleSubmit(e){
         // {
@@ -131,7 +140,8 @@ export default class FormEvent extends Component {
                 city:this.state.city,
                 date:this.state.date,
                 description:this.state.description,
-                time:this.state.time
+                time:this.state.time,
+                color:this.state.col
             }; 
              this.props.addEvent(data);  
              this.props.closeModal();
@@ -165,6 +175,8 @@ export default class FormEvent extends Component {
                     <legend className="legend"><span className="number">2</span>Description of your reminder</legend>
                     <textarea id="mac" name="mac_details" maxLength="30" onChange={this.handleRemind} ></textarea>
                     <div className="error">{this.state.errorRemind}</div>
+                    <label className="label" htmlFor="colorPicker">Choose a Color:</label>
+                    <GithubPicker onChangeComplete={this.handleColor }/>
                 </fieldset>
                 <div className="error">{this.state.errorGeneral}</div>
                 <button className="boton_submit" onClick={this.handleSubmit}>Add reminder</button>
