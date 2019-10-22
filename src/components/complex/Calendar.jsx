@@ -30,7 +30,7 @@ export default class Calendar extends Component {
 			week.push(data);
 			ctn++;
 		}
-		for(let i=0; i<numDays; i++){
+		for(let i=1; i<numDays+1; i++){
 			if(ctn===7){
 				arr.push(week);
 				week=[];
